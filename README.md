@@ -22,6 +22,6 @@ Factor          → NUMBER | ID | "(" Expr ")"
 ```
 bison -d parser.y
 flex lexer.l
-!gcc lex.yy.c parser.tab.c -o output
-!./output < input.txt
+gcc lex.yy.c parser.tab.c -o output
+./output < input.txt
 ```
